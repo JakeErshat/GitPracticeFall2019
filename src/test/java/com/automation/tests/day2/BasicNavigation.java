@@ -23,7 +23,15 @@ public class BasicNavigation {
         else {
             System.out.println("TEST FAILED!");
         }
-        driver.close();
 
+        driver.navigate().to("http://amazon.com");
+        if (driver.getTitle().toLowerCase().contains("amazon")){
+            System.out.println("TEST PASSED!");
+        }
+        else {
+            System.out.println("TEST FAILED!");
+        }
+
+        driver.close();
     }
 }
