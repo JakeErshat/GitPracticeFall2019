@@ -10,6 +10,7 @@ public class BasicNavigation {
         ChromeDriver driver = new ChromeDriver();
 
         driver.get("http://google.com");
+        driver.manage().window().maximize();
         Thread.sleep(3000);
 
         String title = driver.getTitle();
