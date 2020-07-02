@@ -1,5 +1,5 @@
 package day1;
-
+import java.util.*;
 public class StringPractice {
 
     public static void main(String[] args) {
