@@ -18,6 +18,17 @@ public class FindElementById {
         password.sendKeys("SuperSecretPassword");
         driver.findElement(By.id("wooden_spoon")).click();
         Thread.sleep(2000);
+        String expected = "Welcome to the Secure Area. When you are done click logout below.";
+        String actual = driver.findElement(By.tagName("h4")).getText();
+        if (expected.equals(actual)){
+            System.out.println("TEST PASSED");
+        }
+        else{
+            System.out.println("TEST FAILED");
+        }
+        WebElement logout = driver.findElement(By.partialLinkText("Logout"));
+        logout.click();
+        Thread.sleep(2000);
         driver.quit();
     }
 }
