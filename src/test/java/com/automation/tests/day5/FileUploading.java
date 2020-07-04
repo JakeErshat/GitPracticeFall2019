@@ -21,6 +21,8 @@ public class FileUploading {
 
         upload.sendKeys(filePath);
 
+        driver.findElement(By.id("file-submit")).click();
+
         BrowserUtils.wait(5);
         driver.quit();
     }
