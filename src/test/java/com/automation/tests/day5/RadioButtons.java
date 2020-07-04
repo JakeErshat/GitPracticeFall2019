@@ -29,6 +29,7 @@ public class RadioButtons {
             else {
                 System.out.println("Button is disabled, not clikced ::" + radioButton.getAttribute("id"));
             }
+            System.out.println();
         }
 
         driver.quit();
