@@ -6,16 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class NoSelectDropDowns {
 
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("http://practice.cybertekschool.com/dropdown");
-        BrowserUtils.wait(3);
+        BrowserUtils.wait(2);
         driver.findElement(By.id("dropdownMenuLink")).click();
+        BrowserUtils.wait(2);
+        driver.findElement(By.linkText("Amazon")).click();
 
-        BrowserUtils.wait(3);
+
+        BrowserUtils.wait(2);
         driver.quit();
     }
 }
