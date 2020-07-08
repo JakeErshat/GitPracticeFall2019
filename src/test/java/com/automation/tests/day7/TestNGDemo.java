@@ -46,7 +46,7 @@ public class TestNGDemo {
     public void test3() {
         System.out.println("Test3");
         Assert.assertTrue(15 > 10);
-        throw new SkipException("Just skipped");
+        //throw new SkipException("Just skipped");
     }
 
     @AfterMethod

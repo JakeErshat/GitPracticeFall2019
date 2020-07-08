@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+    <test name="Calendar events tests">
+        <classes>
+            <class name="com.automation.tests.day7.TestNGDemo"></class>
+        </classes>
+    </test>
+    <test name="Calls tests">
+        <classes>
+            <class name="com.automation.tests.day7.DataProviderTestNG"></class>
+        </classes>
+    </test>
+</suite>
